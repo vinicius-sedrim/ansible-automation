@@ -1,0 +1,10 @@
+1 passo - Instalar Vagrant / Ansible
+
+2 passo - Iniciar Vagrant no terminal
+  vagrant init -m ubuntu/trusty64
+
+3 passo - Criação de novos servidores
+  vagrant up (criar) / vagrant destroy (apagar) / vagrant status / vagrant ssh-config (informações sobre o ssh)
+
+4 passo - Pingar servidores com: 
+  ansible all -u vagrant --private-key .vagrant/machines/virtualbox/private_key -i hosts -m ping
